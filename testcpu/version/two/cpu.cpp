@@ -19,16 +19,19 @@ string HEX[MAX];//十六进制
 
 class BinaryTree;//二叉树
 BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data);//自动生成树
-BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data,string (*func)(string,string));//自动生成树
-BinaryTree* autoFoundTree(BinaryTree* tree,string instrument);//自动生成树
-class CPU;//
-class Cache;
+BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data,string (*func)(string,string));
+BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data,void (*func)(string &,string));
+BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data,void (*func)(string &,int));
+BinaryTree* autoFoundTree(BinaryTree* tree,string instrument);//自动查找树
+class CPU;//CPU
+
 string numberToBinary(int x,string s);//将十进制数转成二进制
 string numberToBinary(int x,int res);//将十进制数转成二进制
 int binaryToNumber(string s);//将二进制的数转成十进制
 int hexToNumber(string s);//将十六进制转成十进制
 string hexToBinary(int x,string s);//将十六进制转成二进制
 string binaryToHex(int x,string s);//将二进制转成十六进制
+
 string add(string sa,string sb);//加
 string seb(string sa,string sb);//减
 string mul(string sa,string sb);//乘
@@ -36,6 +39,7 @@ string div(string sa,string sb);//除
 void copy(string &sa,string sb);//寄存器拷贝
 void cop(string &sa,int sb);//寄存器赋值
 void free(string &sa,string sb);//清空寄存器
+
 int read();//字节码
 int compile(int length);//机器码二进制及十六进制
 
