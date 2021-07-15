@@ -25,12 +25,12 @@ BinaryTree* autoGrowTree(BinaryTree* tree,string instrument,string data,void (*f
 BinaryTree* autoFoundTree(BinaryTree* tree,string instrument);//自动查找树
 class CPU;//CPU
 
-string numberToBinary(int x,string s);//将十进制数转成二进制
-string numberToBinary(int x,int res);//将十进制数转成二进制
+string numberToBinary(int x,string s);//将十进制的数转成二进制
+string numberToBinary(int x,int res);//将十进制的数转成二进制
 int binaryToNumber(string s);//将二进制的数转成十进制
-int hexToNumber(string s);//将十六进制转成十进制
-string hexToBinary(int x,string s);//将十六进制转成二进制
-string binaryToHex(int x,string s);//将二进制转成十六进制
+int hexToNumber(string s);//将十六进制的数转成十进制
+string hexToBinary(int x,string s);//将十六进制的数转成二进制
+string binaryToHex(int x,string s);//将二进制的数转成十六进制
 
 string add(string sa,string sb);//加
 string seb(string sa,string sb);//减
@@ -220,7 +220,7 @@ BinaryTree* autoFoundTree(BinaryTree* tree,string instrument) {
     return n;
 }
 
-class CPU {//控制单元CU算术逻辑单元ALU
+class CPU {
 private:
     int numberBUS;//总线占用数,当>=1024/2时，说明总线占满了
     string BUS[MAX];//总线
@@ -264,15 +264,15 @@ public:
                 string result = bt->function(CSR[binaryToNumber(BUS[MAX/2+i].substr(0,4))],
                                              CSR[binaryToNumber(BUS[MAX/2+i].substr(4,4))]);
                 CSR[binaryToNumber(BUS[MAX/2+i].substr(0, 4))] = result;
-                cout << binaryToNumber(result) << endl;
+                cout << PC << ":" << bt->getData() << "--" << binaryToNumber(result) << endl;
             } else if(bt->func != nullptr) {
                 bt->func(CSR[binaryToNumber(BUS[MAX/2+i].substr(0, 4))],
                          CSR[binaryToNumber(BUS[MAX/2+i].substr(4, 4))]);
-                cout << "func" << endl;
+                cout << PC << ":" << bt->getData() << "--" << "func" << endl;
             } else {
                 bt->funct(CSR[binaryToNumber(BUS[MAX/2+i].substr(0, 4))],
                           binaryToNumber(BUS[MAX/2+i].substr(4, 4)));
-                cout << "funct" << endl;
+                cout << PC << ":" << bt->getData() << "--" << "funct" << endl;
             }
         }
     }
@@ -571,7 +571,7 @@ int main() {
     length = compile(length);
     sixteen(length);
     for(int i=0;i<length;i++) {
-        cout<<binaryToHex(16,numberToBinary(16,2*i))<<':'<<IRbinary[i]<<"\t"<<HEX[i]<<'\n';
+        cout<<binaryToHex(16,numberToBinary(16,2*i))<<':'<<IRbinary[i]<<'\t'<<HEX[i]<<'\n';
     }
 
     CPU test = CPU();
