@@ -1,0 +1,12 @@
+cop R1,10
+copy R5,R1
+cop R2,2
+add R1,R2
+cop R3,6
+seb R1,R3
+copy R4,R1
+free R5
+free R4
+free R3
+free R2
+free R1
