@@ -13,7 +13,7 @@ using namespace std;
 #define MAXIMUM 16
 #define BYTE 8
 
-string IR[MAX];//源代码
+string IR[MAX];//类汇编代码
 string IRbinary[MAX];//二进制代码
 string HEX[MAX];//十六进制
 
