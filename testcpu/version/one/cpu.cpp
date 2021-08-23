@@ -2,7 +2,7 @@
 // Created by polite on 2021/7/11.
 //
 
-//=====/The Start/=====//
+//=====The Start=====//
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -561,4 +561,4 @@ int main() {
 
     return 0;
 }
-//=====/The End/=====//
+//=====The End=====//
