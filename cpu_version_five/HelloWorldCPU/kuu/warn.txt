@@ -1,0 +1,7 @@
+>-	[11:14:26 618ms746us100ns]	999500[0 s 0 ms 999 us 500 ns] <
+>-	[11:14:26 618ms746us100ns]
+[ { 'class-name' : 'user', 'class-member' : { 'id' : 4, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 3, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 2, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 1, 'name' : 'alice' }, 'direction' : 'bean' } ]
+	999500[0 s 0 ms 999 us 500 ns] <

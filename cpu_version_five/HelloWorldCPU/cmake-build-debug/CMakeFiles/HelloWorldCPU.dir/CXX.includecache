@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/HelloWorldCPU/main.cpp
+iostream
+-
+virtual_cpu.h
+E:/CLionProjects/HelloWorldCPU/virtual_cpu.h
+
+E:/CLionProjects/HelloWorldCPU/virtual_cpu.h
+iostream
+-
+sstream
+-
+cstdarg
+-
+string
+-
+vector
+-
+fstream
+-
+chrono
+-
+

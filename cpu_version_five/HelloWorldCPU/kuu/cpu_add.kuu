@@ -1,0 +1,10 @@
+mov e1x ax
+mov e2x bx
+jny e2x 3
+mov rx e1x
+ret
+inc e1x
+dec e2x
+jnz e2x 2
+mov rx e1x
+ret

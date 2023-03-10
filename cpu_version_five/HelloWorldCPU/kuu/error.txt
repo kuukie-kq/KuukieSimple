@@ -1,0 +1,20 @@
+>*	[11:14:26 617ms746us600ns]
+おはようございます，
+私は今日も頑張ってします，
+どうぞよろしくお願いいたします。
+	0[0 s 0 ms 0 us 0 ns] <
+>*	[11:14:26 618ms746us100ns]
+[ { 'class-name' : 'user', 'class-member' : { 'id' : 4, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 3, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 2, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 1, 'name' : 'alice' }, 'direction' : 'bean' } ]
+	999500[0 s 0 ms 999 us 500 ns] <
+>*	[11:14:26 619ms745us300ns]
+[ { 'class-name' : 'user', 'class-member' : { 'id' : 4, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 3, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 2, 'name' : '' }, 'direction' : 'bean' }, 
+{ 'class-name' : 'user', 'class-member' : { 'id' : 1, 'name' : 'alice' }, 'direction' : 'bean' } ]
+	1998700[0 s 1 ms 998 us 700 ns] <
+>*	[11:14:26 619ms745us300ns]
+	user_name_user
+	1998700[0 s 1 ms 998 us 700 ns] <
